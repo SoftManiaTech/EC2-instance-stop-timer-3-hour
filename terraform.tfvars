@@ -1,0 +1,5 @@
+aws_access_key = "<AWS_ACCESS_KEY>"
+aws_secret_key = "<AWS_SECRET_KEY>"
+region         = "<REGION>"
+stop_lambda_name = "stop-ec2-instances"
+schedule_lambda_name = "schedule-ec2-stop"
