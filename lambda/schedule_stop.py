@@ -24,7 +24,7 @@ def lambda_handler(event, context):
         if any(tag['Key'].lower() == 'autostop' and tag['Value'].lower() == 'true' for tag in tags):
             print("AutoStop=true tag found")
 
-            stop_time = datetime.datetime.utcnow() + datetime.timedelta(hours=3)
+            stop_time = datetime.datetime.utcnow() + datetime.timedelta(hours=2)
             print("Current UTC Time:", datetime.datetime.utcnow())
             print("Scheduled Stop Time UTC:", stop_time)
 
